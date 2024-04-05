@@ -2,11 +2,9 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'app',
-  webDir: 'dist',
-  server: {
-    androidScheme: 'https'
-  }
+  appName: 'techproacademy',
+  webDir: 'www',
+  bundledWebRuntime: false
 };
 
 export default config;

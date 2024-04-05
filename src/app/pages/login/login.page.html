@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="card-login">
+    <div class="header-card-login">
+        <h1>Se connecter à techproAdacamy</h1>
+    </div>
+    <div class="content-card-login">
+      <ion-buttons>
+        <ion-button  color="light">
+          Connexion
+        </ion-button>
+        <ion-button color="light">
+          Inscription
+        </ion-button>
+       </ion-buttons>
+    </div>
+</div>
+<br>
+<br>
+<div id="list-ion-item">
+  <ion-item  >
+    <ion-label>Email</ion-label>
+    <ion-input [(ngModel)]="email" type="text" color="medium" placeholder="Adresse email"></ion-input>
+  </ion-item> <br>
+  <ion-item  >
+    <ion-label>Mot de passe</ion-label>
+    <ion-input [(ngModel)]="password" type="password" color="medium" placeholder="Mot de passe"></ion-input>
+  </ion-item> <br>
+  
+  <ion-item lines="none">
+    <ion-button  color="dark" expand="block" fill="clear" slot="start" shape="round">
+      Mot de passe oublié ?
+    </ion-button>
+  </ion-item>
+</div>
+<div id="ion-button-login">
+  <ion-button (click)="onSubmit()" type="button" color="light" expand="block" fill="clear" shape="round">
+    Se connecter
+  </ion-button>
+</div>
+
+
+</ion-content>

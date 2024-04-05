@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Formations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="contain">
+    <h1>Selectionner une formation</h1>
+    <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="" placeholder="Recherche"></ion-searchbar>
+    <hr>
+    <h4>Formations suivies</h4>
+    <span>({{ countSubscriptions }})</span>
+    <app-progress-plan *ngFor="let plan of _subscriptions" [planProgression]="plan"></app-progress-plan>
+    <ion-button (click)="onClick()"  fill="clear" color="secondary" shape="round">
+      Tout voir
+    </ion-button>
+    <h2>Autres formations</h2>
+    <app-card-plan></app-card-plan>
+  </div>
+
+</ion-content>
